@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MRb-AN-dHX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GROCERY SIM-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="The_Checkout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="TLx-WS-CIr">
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">2
+A 1 2
+A 1 2
+A 2 1
+A 3 2</string>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuJ-yh-eHB">
+                                <color key="backgroundColor" red="0.20108058649011401" green="0.56974826386262634" blue="0.39943300360415018" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Checkout">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="84m-Dg-RuN" kind="show" identifier="checkoutSeg" id="nig-El-oGk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carts" translatesAutoresizingMaskIntoConstraints="NO" id="h8Q-Zq-wQD">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h8Q-Zq-wQD" secondAttribute="height" multiplier="249:197" id="H2t-H3-bWe"/>
+                                    <constraint firstAttribute="height" constant="197" id="RPg-Jb-luS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26834334962139939" green="0.7618450126262627" blue="0.5349681879770205" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="h8Q-Zq-wQD" firstAttribute="centerX" secondItem="FuJ-yh-eHB" secondAttribute="centerX" id="QlJ-ib-Ncb"/>
+                            <constraint firstItem="FuJ-yh-eHB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wd5-vY-9Ed"/>
+                            <constraint firstItem="h8Q-Zq-wQD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="Wwh-jl-0qi"/>
+                            <constraint firstItem="TLx-WS-CIr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="fqM-9N-aV9"/>
+                            <constraint firstItem="TLx-WS-CIr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ivg-6D-60r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TLx-WS-CIr" secondAttribute="trailing" constant="51" id="kxl-tr-ZWm"/>
+                            <constraint firstItem="FuJ-yh-eHB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="liH-3z-Lbm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h8Q-Zq-wQD" secondAttribute="bottom" constant="31" id="pNN-LD-efB"/>
+                            <constraint firstItem="FuJ-yh-eHB" firstAttribute="top" secondItem="TLx-WS-CIr" secondAttribute="bottom" constant="18" id="ypu-3D-kno"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GROCERY SIM" id="QQP-Fl-Xe3">
+                        <barButtonItem key="backBarButtonItem" title="back" id="6rG-19-CHI"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inputText" destination="TLx-WS-CIr" id="d0z-Tf-eTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132.5" y="136.26760563380282"/>
+        </scene>
+        <!--TOTAL TIME-->
+        <scene sceneID="wGE-v1-HBq">
+            <objects>
+                <viewController title="TOTAL TIME" id="84m-Dg-RuN" customClass="CheckViewController" customModule="The_Checkout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="igO-NN-diC"/>
+                        <viewControllerLayoutGuide type="bottom" id="dK2-hQ-vda"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Prp-Kb-27V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVN-HM-6lK">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2683433496" green="0.76184501260000004" blue="0.53496818800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DVN-HM-6lK" firstAttribute="width" secondItem="Prp-Kb-27V" secondAttribute="height" multiplier="87:284" id="2Mr-BW-l8i"/>
+                            <constraint firstItem="DVN-HM-6lK" firstAttribute="centerX" secondItem="Prp-Kb-27V" secondAttribute="centerX" id="hgl-OZ-9zT"/>
+                            <constraint firstItem="DVN-HM-6lK" firstAttribute="centerY" secondItem="Prp-Kb-27V" secondAttribute="centerY" id="zPb-LP-ovj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="DVN-HM-6lK" id="oTQ-Nw-DnQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzk-st-MqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.5" y="135.21126760563379"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nyn-aO-1Nh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MRb-AN-dHX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mb3-KP-yHM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZON-4v-pSG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fiv-yZ-2JJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="136.26760563380282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carts" width="234" height="184"/>
+    </resources>
+</document>
