@@ -114,13 +114,13 @@ class ViewController: UIViewController, UITextViewDelegate {
         print("Registers count: \(registers.count)")
     }
 
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if(text == "\n") {
-            textView.resignFirstResponder()
-            return false
-        }
-        return true
-    }
+    // func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    //    if(text == "\n") {
+    //        textView.resignFirstResponder()
+    //        return false
+    //    }
+    //    return true
+    //}
     
      // MARK: - Navigation
      
