@@ -315,7 +315,7 @@ class CheckViewController: UIViewController {
         if (completedCusts == customers.count) {
             if registersDone() == registers.count {
                 print("FINAL TIME = \(self.time)")
-                timeLabel.text = "Simulation Time: \(self.time) m"
+                timeLabel.text = "Finished at: \(self.time) min"
                 endSim = true
                 clearAll()
                 return
